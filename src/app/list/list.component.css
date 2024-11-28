@@ -1,0 +1,14 @@
+.btn-trash{
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+.btn-trash:hover{
+    border-color: black;
+    border: 8px;
+}
+
+.bi-trash:hover{
+    color: black;
+    
+}

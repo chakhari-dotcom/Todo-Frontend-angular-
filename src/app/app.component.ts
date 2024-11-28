@@ -1,12 +1,16 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterModule, RouterOutlet } from '@angular/router';
+import { TodoComponent } from './todo/todo.component';
+import { ListComponent } from './list/list.component';
+import { InputComponent } from './input/input.component';
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, TodoComponent, ListComponent,InputComponent,RouterModule],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'todoFront';
